@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffebf0;
+    font-family: 'Cursive', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.4rem;
+    color: #ff1493;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 1.6rem;
+    background-color: #fcd1d9;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.time-block {
+    margin: 10px;
+    text-align: center;
+}
+
+.time-block p {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.time-block span {
+    font-size: 1rem;
+    color: #ff1493;
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #ff69b4;
+    font-style: italic;
+}
+
+.message::before, .message::after {
+    content: "❣️ ";
+}
