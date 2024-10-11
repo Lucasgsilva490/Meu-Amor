@@ -190,6 +190,6 @@ h1 {
 /* Estilos adicionais para dispositivos móveis */
 @media (max-width: 600px) {
     .container {
-        padding: 15px; /* reduz o padding para dispositivos menores */
+        padding: 20px; /* reduz o padding para dispositivos menores */
     }
 }
