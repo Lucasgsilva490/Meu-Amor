@@ -35,14 +35,14 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem; /* tamanho fixo para notebooks */
+    font-size: 3rem; /* tamanho fixo para notebooks */
     color: #ff3e28; /* vermelho intenso */
     margin-bottom: 10px;
     animation: fadeIn 2s ease-out forwards;
 }
 
 .intro {
-    font-size: 1.6rem; /* tamanho fixo para notebooks */
+    font-size: 1.8rem; /* tamanho fixo para notebooks */
     color: #e74c3c; /* vermelho mais claro */
     margin-bottom: 20px;
     font-style: italic;
@@ -193,18 +193,22 @@ h1 {
     }
 
     h1 {
-        font-size: 6vw; /* tamanho responsivo */
+        font-size: 8vw; /* tamanho responsivo */
     }
 
-    .intro, .message {
-        font-size: 4vw; /* tamanho responsivo */
+    .intro {
+        font-size: 5vw; /* tamanho responsivo */
     }
 
     .time-block p {
-        font-size: 6vw; /* tamanho responsivo */
+        font-size: 7vw; /* tamanho responsivo */
     }
 
     .time-block span {
+        font-size: 5vw; /* tamanho responsivo */
+    }
+
+    .message {
         font-size: 4vw; /* tamanho responsivo */
     }
 }
