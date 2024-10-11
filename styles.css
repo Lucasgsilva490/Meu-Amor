@@ -191,24 +191,4 @@ h1 {
     .container {
         padding: 15px; /* reduz o padding para dispositivos menores */
     }
-
-    h1 {
-        font-size: 8vw; /* tamanho responsivo */
-    }
-
-    .intro {
-        font-size: 5vw; /* tamanho responsivo */
-    }
-
-    .time-block p {
-        font-size: 7vw; /* tamanho responsivo */
-    }
-
-    .time-block span {
-        font-size: 5vw; /* tamanho responsivo */
-    }
-
-    .message {
-        font-size: 4vw; /* tamanho responsivo */
-    }
 }
