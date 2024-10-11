@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     animation: backgroundFade 10s ease-in-out infinite;
+    overflow: hidden; /* impede o overflow em dispositivos móveis */
 }
 
 @keyframes backgroundFade {
@@ -25,7 +26,7 @@ body {
 
 .container {
     background-color: #fff0f5; /* fundo levemente rosa */
-    padding: 30px;
+    padding: 20px;
     border-radius: 25px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -34,14 +35,14 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* tamanho fixo para notebooks */
     color: #ff3e28; /* vermelho intenso */
     margin-bottom: 10px;
     animation: fadeIn 2s ease-out forwards;
 }
 
 .intro {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* tamanho fixo para notebooks */
     color: #e74c3c; /* vermelho mais claro */
     margin-bottom: 20px;
     font-style: italic;
@@ -50,7 +51,7 @@ h1 {
 .highlight {    
     font-weight: bold;
     color: #ff3e28; /* vermelho intenso */
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* tamanho fixo para notebooks */
     background-color: #ffe4e1; /* fundo vermelho claro */
     padding: 2px 8px;
     border-radius: 10px;
@@ -59,7 +60,7 @@ h1 {
 .highlight-date {
     font-weight: bold;
     color: #e74c3c; /* vermelho mais claro */
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* tamanho fixo para notebooks */
     border: 2px solid #e74c3c; /* vermelho mais claro */
     padding: 2px 12px;
     border-radius: 15px;
@@ -89,23 +90,24 @@ h1 {
 .time-block {
     margin: 10px;
     text-align: center;
+    flex: 1 1 30%; /* faz com que os blocos se ajustem em diferentes tamanhos de tela */
 }
 
 .time-block p {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* tamanho fixo para notebooks */
     color: #ff3e28; /* vermelho intenso */
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .time-block span {
-    font-size: 1rem;
+    font-size: 1.2rem; /* tamanho fixo para notebooks */
     color: #e74c3c; /* vermelho mais claro */
 }
 
 .message {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* tamanho fixo para notebooks */
     color: #ff3e28; /* vermelho intenso */
     font-style: italic;
 }
@@ -181,5 +183,28 @@ h1 {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Estilos adicionais para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* reduz o padding para dispositivos menores */
+    }
+
+    h1 {
+        font-size: 6vw; /* tamanho responsivo */
+    }
+
+    .intro, .message {
+        font-size: 4vw; /* tamanho responsivo */
+    }
+
+    .time-block p {
+        font-size: 6vw; /* tamanho responsivo */
+    }
+
+    .time-block span {
+        font-size: 4vw; /* tamanho responsivo */
     }
 }
