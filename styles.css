@@ -5,16 +5,26 @@
 }
 
 body {
-    background-color: #ffebf0;
+    background-color: #ffe4e1; /* fundo vermelho claro */
     font-family: 'Cursive', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    animation: backgroundFade 10s ease-in-out infinite;
+}
+
+@keyframes backgroundFade {
+    0%, 100% {
+        background-color: #ffe4e1;
+    }
+    50% {
+        background-color: #ffcccb; /* tom mais suave no meio */
+    }
 }
 
 .container {
-    background-color: #fff0f5;
+    background-color: #fff0f5; /* fundo levemente rosa */
     padding: 30px;
     border-radius: 25px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -25,24 +35,48 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: #ff69b4;
+    color: #ff3e28; /* vermelho intenso */
     margin-bottom: 10px;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .intro {
     font-size: 1.4rem;
-    color: #ff1493;
+    color: #e74c3c; /* vermelho mais claro */
     margin-bottom: 20px;
     font-style: italic;
 }
 
-.highlight {
+.highlight {    
     font-weight: bold;
-    color: #ff69b4;
+    color: #ff3e28; /* vermelho intenso */
     font-size: 1.6rem;
-    background-color: #fcd1d9;
+    background-color: #ffe4e1; /* fundo vermelho claro */
     padding: 2px 8px;
     border-radius: 10px;
+}
+
+.highlight-date {
+    font-weight: bold;
+    color: #e74c3c; /* vermelho mais claro */
+    font-size: 1.6rem;
+    border: 2px solid #e74c3c; /* vermelho mais claro */
+    padding: 2px 12px;
+    border-radius: 15px;
+    background-color: #fff8e1; /* fundo levemente amarelado */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #e74c3c; /* sombra vermelha */
+    }
+    50% {
+        box-shadow: 0 0 20px #e74c3c; /* sombra vermelha */
+    }
+    100% {
+        box-shadow: 0 0 10px #e74c3c; /* sombra vermelha */
+    }
 }
 
 .timer {
@@ -59,23 +93,93 @@ h1 {
 
 .time-block p {
     font-size: 2.5rem;
-    color: #ff69b4;
+    color: #ff3e28; /* vermelho intenso */
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .time-block span {
     font-size: 1rem;
-    color: #ff1493;
+    color: #e74c3c; /* vermelho mais claro */
 }
 
 .message {
     margin-top: 30px;
     font-size: 1.5rem;
-    color: #ff69b4;
+    color: #ff3e28; /* vermelho intenso */
     font-style: italic;
 }
 
 .message::before, .message::after {
     content: "❣️ ";
+}
+
+.highlight.animate-names {
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+/* Galeria de imagens */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animações */
+.animate-names {
+    animation: floatText 2s ease-in-out infinite;
+}
+
+@keyframes floatText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-timer {
+    animation: bounceIn 1.5s ease-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-message {
+    animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
