@@ -10,9 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* garante que o corpo ocupe pelo menos a altura da tela */
     animation: backgroundFade 10s ease-in-out infinite;
-    overflow: hidden; /* impede o overflow em dispositivos móveis */
+    overflow: auto; /* permite o scroll */
 }
 
 @keyframes backgroundFade {
