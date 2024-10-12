@@ -1,5 +1,5 @@
 // Defina aqui a data e hora em que começaram a namorar
-const namoroDataHora = new Date("2024-06-12T20:43:00"); // Exemplo: 4 de Junho de 2024, 20:00
+const namoroDataHora = new Date("2024-06-12T20:42:00"); // Exemplo: 4 de Junho de 2024, 20:00
 
 function formatarDataHora(data) {
     const dia = String(data.getDate()).padStart(2, '0');
