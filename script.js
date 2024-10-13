@@ -28,6 +28,7 @@ function calcularTempo() {
     document.getElementById("hours").textContent = horasTotais;
     document.getElementById("minutes").textContent = minutosTotais;
     document.getElementById("seconds").textContent = segundosTotais;
+    document.getElementById("rosas").textContent = '🌹'.repeat(mesesTotais);
 }
 
 // Exibe a data e hora do namoro no frontend
